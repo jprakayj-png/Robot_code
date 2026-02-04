@@ -1,0 +1,24 @@
+#include "src/Motor.h" ;
+#define directionpin 4 ;
+#define baudrate 1152000 ;
+
+// info about robot 
+float radius_wheel = 4.5 ;
+float between_wheel = 15.0 ;
+float time = 3000 ; 
+// calculate distance 
+void cal_distance (float s) {
+  float rpm = (s*(2*3.14*radius_wheel) * (60000/time)) ;
+}
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(1152000) ;
+  Motor.begin(baudrate,directionpin,&Serial2) ;
+  delay(t) ;
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
